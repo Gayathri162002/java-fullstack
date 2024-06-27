@@ -1,0 +1,41 @@
+DAY 6
+Assignment 1: Initialize a new Git repository in a directory of your choice. Add a simple text file to the repository and make the first commit.
+A)
+
+Sure, here are the steps to initialize a new Git repository, add a text file, and make the first commit:
+
+1.Navigate to the directory where you want to initialize the Git repository. For example, if you want to create a repository in a folder named "my_project", you can use the cd command to     change to that directory:
+
+            cd path/to/my_project
+
+2.Initialize a new Git repository. Use the git init command to create a new Git repository in the current directory:
+
+              git init
+
+3.Create a simple text file. You can create a new text file using any text editor. For example, if you're on a Unix-like system, you can use nano, vim, or gedit. If you're on Windows, you can use Notepad or any other text editor.
+
+4.Add the text file to the Git repository. Use the git add command to stage the text file for commit. Replace filename.txt with the actual name of your text file:
+
+          git add filename.txt
+
+5.Commit the changes. Use the git commit command to commit the staged changes to the repository. This command will open a text editor for you to write a commit message. If you want to skip the text editor, you can use the -m flag followed by your commit message:
+
+         git commit -m "Initial commit: Added filename.txt"
+#!/bin/bash
+
+# Navigate to the directory
+cd /path/to/your/directory
+
+# Initialize a new Git repository
+git init
+
+# Create a simple text file
+echo "Hello, Git!" > myfile.txt
+
+# Add the text file to the Git repository
+git add myfile.txt
+
+# Commit the changes
+git commit -m "Initial commit: Added myfile.txt"
+
+Save this script with a .sh extension (e.g., initialize_git_repo.sh) and make it executable with the command chmod +x initialize_git_repo.sh. Then you can run the script by executing ./initialize_git_repo.sh. It will perform all the steps automatically.

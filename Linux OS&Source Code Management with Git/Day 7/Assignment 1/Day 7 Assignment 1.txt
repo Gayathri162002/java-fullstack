@@ -1,0 +1,25 @@
+Assignment 1: Ensure the script checks if a specific file (e.g., myfile.txt) exists in the current directory. If it exists, print "File exists", otherwise print "File not found".
+
+$ file="gayi.txt"
+if[ -e "$file" ], then
+echo "file exist"
+else
+echo "File not found"
+fi
+output:- File exist
+
+Steps to run the script:
+
+1. Create a Shell Script File: Open a terminal and create a new file, e.g., check_file.sh
+-->nano check_file.sh
+
+2. Paste the Script: Copy the above script and paste it into the check_file.sh file.
+
+3. Save and Exit: Save the file and exit the text editor (for nano, press Ctrl+X, then Y, then Enter).
+
+4. Make the Script Executable: Give execute permission to the script
+-->chmod +x check_file.sh
+
+5. Run the Script: Execute the script
+-->./check_file.sh
+

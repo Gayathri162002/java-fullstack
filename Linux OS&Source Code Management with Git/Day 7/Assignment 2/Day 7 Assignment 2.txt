@@ -1,0 +1,37 @@
+Day 7
+Assignment 2: Write a script that reads numbers from the user until they enter '0'. The script should also print whether each number is odd or even.
+
+#!/bin/bash
+
+while true; do
+    # Read number from the user
+    echo -n "Enter a number (0 to quit): "
+    read number
+
+    # Check if the number is 0
+    if [ "$number" -eq 0 ]; then
+        echo "Exiting the script."
+        break
+    fi
+
+    # Check if the number is even or odd
+    if [ $((number % 2)) -eq 0 ]; then
+        echo "$number is even."
+    else
+        echo "$number is odd."
+    fi
+done
+
+
+1. Create a Shell Script File: Open a terminal and create a new file, e.g., odd_even.sh.
+-->nano odd_even.sh
+
+2. Paste the Script: Copy the above script and paste it into the odd_even.sh file.
+
+3. Save and Exit: Save the file and exit the text editor (for nano, press Ctrl+X, then Y, then Enter).
+
+4. Make the Script Executable: Give execute permission to the script.
+-->chmod +x odd_even.sh
+
+5. Run the Script: Execute the script.
+-->./odd_even.sh
